@@ -246,6 +246,7 @@
   position: relative;
   transition: all 0.35s;
   outline: none;
+  justify-content: center;
 }
 
 .main_btn a {
