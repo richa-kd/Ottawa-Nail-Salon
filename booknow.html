@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ottawa Nail Salon</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://kit.fontawesome.com/e16073dcfb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Niconne&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar_container">
+        <a id="navbar_logo">
+          <img
+            src="images/LOGO.png"
+            alt="Ottawa Nail Salon"
+            width="170px"
+            height="170px"
+          />
+          OTTAWA NAIL SALON
+        </a>
+        <div class="navbar_toggle" id="mobile-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="navbar_menu">
+          <li class="navbar_item">
+            <a href="/" class="navbar_links">Home</a>
+          </li>
+          <li class="navbar_item">
+            <a href="/services.html" class="navbar_links">Services</a>
+          </li>
+          <li class="navbar_item">
+            <a href="/technicians.html" class="navbar_links">Technicians</a>
+          </li>
+          <li class="navbar_item">
+            <a href="/contactUs.html" class="navbar_links">Contact Us</a>
+          </li>
+          <li class="navbar_btn">
+            <a href="/booknow.html" class="button">Book Now!</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <form>
+        <div class="form-group">
+            <label for="firstname">First Name</label>
+            <input type="text" class="form-control" id="firstname" aria-describedby="firstnameHelp" placeholder="Enter First Name">
+          </div>
+          <div class="form-group">
+            <label for="lastname">Last Name</label>
+            <input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp" placeholder="Enter Last Name">
+          </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-row align-items-center">
+            <div class="col-auto my-1">
+              <label class="mr-sm-2" for="inlineFormCustomSelect">Service</label>
+              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                <option selected>Choose...</option>
+                <option value="1">Manicure: Without Polish</option>
+                <option value="2">Manicure: Regular Polish</option>
+                <option value="3">Manicure: Gel Polish</option>
+                <option value="4">Manicure: Acrylic Full Set</option>
+                <option value="5">Manicure: Acrylic Fill</option>
+                <option value="6">Pedicure: Without Polish</option>
+                <option value="7">Pedicure: Regular Polish</option>
+                <option value="8">Pedicure: Gel Polish</option>
+                <option value="9">Nail Art: Simple Level</option>
+                <option value="10">Nail Art: Medium Level</option>
+                <option value="11">Nail Art: High Level</option>
+                <option value="12">Removal: Modern Gel/Dip</option>
+                <option value="13">Removal: Acrylic</option>
+              </select>
+            </div>
+            <div class="form-row align-items-center">
+                <div class="col-auto my-1">
+                  <label class="mr-sm-2" for="inlineFormCustomSelect">Technician</label>
+                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                    <option selected>Choose...</option>
+                    <option value="1">Adam Rodriguez</option>
+                    <option value="2">Emily White</option>
+                    <option value="3">Olivia Johnson</option>
+                    <option value="4">Samantha Taylor</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                    <label for="datepicker">Choose a date</label>
+                    <input type="text" class="form-control" id="datepicker">
+                  </div>
+                  <div class="form-group">
+                    <label for="appt-time">Choose a time:</label>
+                    <input type="time" id="appt-time" name="appt-time" min="09:00" max="17:00" required>
+                  </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">Add Another Customer</button>
+      </form>
+    <div class="footer_container">
+      <div class="footer_links">
+        <div class="footer_links-wrapper">
+          <div class="footer_links-items">
+            <h2>About Us</h2>
+            <a href="/">How it works</a>
+            <a href="/">T2</a>
+            <a href="/">T3</a>
+            <a href="/">T4</a>
+            <a href="/">T5</a>
+          </div>
+          <div class="footer_links-items">
+            <h2>About Us</h2>
+            <a href="/">How it works</a>
+            <a href="/">T2</a>
+            <a href="/">T3</a>
+            <a href="/">T4</a>
+            <a href="/">T5</a>
+          </div>
+        </div>
+        <div class="footer_links-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+  <script src="app.js"></script>
+  <script>
+    $(document).ready(function(){
+      $('#datepicker').datepicker({
+        format: 'yyyy-mm-dd'
+      });
+    });
+  </script>
+  </body>
+</html>
