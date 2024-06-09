@@ -618,7 +618,7 @@
 }
 
 .tech-col h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: "Times New Roman", Times, serif;
   padding: 0;
   margin: 0 0;
@@ -627,6 +627,7 @@
 .tech-col p {
   text-align: left;
   margin-top: 20px;
+  font-size: 1.25rem;
 }
 
 .tech-heading {
