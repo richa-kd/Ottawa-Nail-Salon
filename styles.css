@@ -484,6 +484,12 @@
   margin-bottom: 0.5rem;
 }
 
+.footer_links-items p {
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+}
+
 .footer_links-items a:hover {
   color: #fbccdc;
   transition: 0.3s ease-out;
