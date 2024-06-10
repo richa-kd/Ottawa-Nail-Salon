@@ -447,6 +447,7 @@
   justify-content: center;
   align-items: center;
   height: 200px;
+  z-index: 1;
 }
 
 .footer_links {
@@ -678,6 +679,8 @@
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+  z-index: 3;
 }
 
 #datepicker:focus {
@@ -701,6 +704,8 @@
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  position: relative;
+  z-index: 3;
 }
 
 #appt-time:focus {
@@ -711,4 +716,26 @@
 
 #appt-time:hover {
   border-color: #b8daff;
+}
+
+.form-group {
+  margin: 20px;
+}
+
+.btn-primary {
+  margin: 20px;
+  font-size: 15px;
+}
+
+form {
+  position: relative;
+  z-index: 2;
+}
+
+.form-heading h2 {
+  text-align: center;
+  color: #fff;
+  font-size: 3rem;
+  background-color: #b05876;
+  font-family: "Times New Roman", Times, serif;
 }

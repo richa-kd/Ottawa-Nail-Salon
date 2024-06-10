@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ottawa Nail Salon</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/e16073dcfb.js"
@@ -52,93 +56,167 @@
         </ul>
       </div>
     </nav>
-    <form>
+    <form id="bookingForm">
+      <div class="form-heading">
+        <h2>Booking Appointment</h2>
         <div class="form-group">
-            <label for="firstname">First Name</label>
-            <input type="text" class="form-control" id="firstname" aria-describedby="firstnameHelp" placeholder="Enter First Name">
-          </div>
-          <div class="form-group">
-            <label for="lastname">Last Name</label>
-            <input type="text" class="form-control" id="lastname" aria-describedby="lastnameHelp" placeholder="Enter Last Name">
-          </div>
+          <label for="firstname">First Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="firstname"
+            aria-describedby="firstnameHelp"
+            placeholder="Enter First Name"
+          />
+        </div>
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input
+            type="text"
+            class="form-control"
+            id="lastname"
+            aria-describedby="lastnameHelp"
+            placeholder="Enter Last Name"
+          />
+        </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
         </div>
-        <div class="form-row align-items-center">
-            <div class="col-auto my-1">
-              <label class="mr-sm-2" for="inlineFormCustomSelect">Service</label>
-              <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
-                <option value="1">Manicure: Without Polish</option>
-                <option value="2">Manicure: Regular Polish</option>
-                <option value="3">Manicure: Gel Polish</option>
-                <option value="4">Manicure: Acrylic Full Set</option>
-                <option value="5">Manicure: Acrylic Fill</option>
-                <option value="6">Pedicure: Without Polish</option>
-                <option value="7">Pedicure: Regular Polish</option>
-                <option value="8">Pedicure: Gel Polish</option>
-                <option value="9">Nail Art: Simple Level</option>
-                <option value="10">Nail Art: Medium Level</option>
-                <option value="11">Nail Art: High Level</option>
-                <option value="12">Removal: Modern Gel/Dip</option>
-                <option value="13">Removal: Acrylic</option>
-              </select>
-            </div>
-            <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                  <label class="mr-sm-2" for="inlineFormCustomSelect">Technician</label>
-                  <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                    <option selected>Choose...</option>
-                    <option value="1">Adam Rodriguez</option>
-                    <option value="2">Emily White</option>
-                    <option value="3">Olivia Johnson</option>
-                    <option value="4">Samantha Taylor</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                    <label for="datepicker">Choose a date</label>
-                    <input type="text" class="form-control" id="datepicker">
-                  </div>
-                  <div class="form-group">
-                    <label for="appt-time">Choose a time:</label>
-                    <input type="time" id="appt-time" name="appt-time" min="09:00" max="17:00" required>
-                  </div>
+        <div class="form-group">
+          <div class="col-auto my-1">
+            <label class="mr-sm-2" for="inlineFormCustomSelect">Service</label>
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">Manicure: Without Polish</option>
+              <option value="2">Manicure: Regular Polish</option>
+              <option value="3">Manicure: Gel Polish</option>
+              <option value="4">Manicure: Acrylic Full Set</option>
+              <option value="5">Manicure: Acrylic Fill</option>
+              <option value="6">Pedicure: Without Polish</option>
+              <option value="7">Pedicure: Regular Polish</option>
+              <option value="8">Pedicure: Gel Polish</option>
+              <option value="9">Nail Art: Simple Level</option>
+              <option value="10">Nail Art: Medium Level</option>
+              <option value="11">Nail Art: High Level</option>
+              <option value="12">Removal: Modern Gel/Dip</option>
+              <option value="13">Removal: Acrylic</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="col-auto my-1">
+            <label class="mr-sm-2" for="inlineFormCustomSelect"
+              >Technician</label
+            >
+            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+              <option selected>Choose...</option>
+              <option value="1">Adam Rodriguez</option>
+              <option value="2">Emily White</option>
+              <option value="3">Olivia Johnson</option>
+              <option value="4">Samantha Taylor</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="datepicker">Choose a date</label>
+          <input type="text" class="form-control" id="datepicker" />
+        </div>
+        <div class="form-group">
+          <label for="appt-time">Choose a time:</label>
+          <input
+            type="time"
+            id="appt-time"
+            name="appt-time"
+            min="09:00"
+            max="17:00"
+            required
+          />
+        </div>
         <button type="submit" class="btn btn-primary">Submit</button>
-        <button type="submit" class="btn btn-primary"><a href="/booknow.html">Add Another Customer</a></button>
-      </form>
+        <button type="button" class="btn btn-primary">
+          <a href="/booknow.html" style="color: white">Add Another Customer</a>
+        </button>
+      </div>
+    </form>
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalCenterTitle">
+              Booking Confirmation
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            You have successfully booked your appointment! An email will be sent
+            with the details of your appointment. See you soon!
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="footer_container">
       <div class="footer_links">
         <div class="footer_links-wrapper">
           <div class="footer_links-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">T2</a>
-            <a href="/">T3</a>
-            <a href="/">T4</a>
-            <a href="/">T5</a>
+            <h2>Contact Us</h2>
+            <p>Email: support@ottawanailsalon.ca</p>
+            <p>Phone: 613-294-8530</p>
+            <p>Open 7 Days a Week: 9am - 5pm</p>
           </div>
           <div class="footer_links-items">
-            <h2>About Us</h2>
-            <a href="/">How it works</a>
-            <a href="/">T2</a>
-            <a href="/">T3</a>
-            <a href="/">T4</a>
-            <a href="/">T5</a>
+            <a href="https://maps.app.goo.gl/x1Pupo3AKZSEt2xc6">
+              <img src="/images/map.png" alt="map" class="footer_map" />
+            </a>
           </div>
         </div>
-        <div class="footer_links-wrapper"></div>
       </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
-  <script src="app.js"></script>
-  <script>
-    $(document).ready(function(){
-      $('#datepicker').datepicker({
-        format: 'yyyy-mm-dd'
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap-datepicker/dist/js/bootstrap-datepicker.min.js"></script>
+    <script src="app.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#datepicker").datepicker({
+          format: "yyyy-mm-dd",
+        });
+
+        $("#bookingForm").on("submit", function (e) {
+          e.preventDefault();
+          $("#exampleModalCenter").modal("show");
+        });
       });
-    });
-  </script>
+    </script>
   </body>
 </html>
