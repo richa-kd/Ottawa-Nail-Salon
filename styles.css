@@ -518,13 +518,17 @@
 }
 
 .footer_map {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 4px;
   transition: transform 0.2s;
 }
 
 .footer_map:hover {
+  transform: scale(1.05);
+}
+
+.map_img:hover {
   transform: scale(1.05);
 }
 
