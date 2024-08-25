@@ -446,7 +446,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 230px;
   z-index: 1;
 }
 
@@ -523,6 +523,7 @@
   height: auto;
   border-radius: 4px;
   transition: transform 0.2s;
+  padding-top: 20px;
 }
 
 .footer_map:hover {
